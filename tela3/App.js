@@ -16,13 +16,13 @@ export default function App() {
           tabBarIcon: ({ focused, color, size }) => {
             let iconName;
 
-            if (route.name === 'TelaA') {
+            if (route.name === 'Tela A') {
               iconName = focused
                 ? 'ios-information-circle'
                 : 'ios-information-circle-outline';
-            } else if (route.name === 'TelaB') {
+            } else if (route.name === 'Tela B') {
               iconName = focused ? 'ios-person' : 'ios-person-outline';
-            } else if (route.name === 'TelaC') {
+            } else if (route.name === 'Tela C') {
               iconName = focused ? 'ios-chatbubbles' : 'ios-chatbubbles-outline';
             }
 
@@ -34,9 +34,9 @@ export default function App() {
           inactiveTintColor: 'gray',
         }}
       >
-        <Tab.Screen name="TelaA" component={TelaA} />
-        <Tab.Screen name="TelaB" component={TelaB} />
-        <Tab.Screen name="TelaC" component={TelaC} />
+        <Tab.Screen name="Tela A" component={TelaA} />
+        <Tab.Screen name="Tela B" component={TelaB} />
+        <Tab.Screen name="Tela C" component={TelaC} />
       </Tab.Navigator>
     </NavigationContainer>
   );
