@@ -1,53 +1,22 @@
-import * as React from 'react';
-import { View, Text } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
+import React from 'react';
 import { createDrawerNavigator } from '@react-navigation/drawer';
-import { TelaA } from './screens/pastaA/telaA.js';
-import { TelaB } from './screens/pastaB/telaB.js';
-import { TelaC } from './screens/pastaC/telaC.js';
-
-
-function TelaAA() {
-  return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <TelaA/>
-    </View>
-  );
-}
-
-function TelaBB() {
-  return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <TelaB/>
-    </View>
-  );
-}
-
-
-function TelaCC() {
-  return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <TelaC/>
-    </View>
-  );
-}
+import { NavigationContainer } from '@react-navigation/native';
+import TelaA from './screens/TelaA.js';
+import TelaB from './screens/TelaB.js';
+import TelaC from './screens/TelaC.js';
 
 const Drawer = createDrawerNavigator();
 
-function MyDrawer() {
-  return (
-    <Drawer.Navigator useLegacyImplementation>
-      <Drawer.Screen name="Tela A" component={TelaAA} />
-      <Drawer.Screen name="Tela B" component={TelaBB} />
-      <Drawer.Screen name="Tela C" component={TelaCC} />
-    </Drawer.Navigator>
-  );
-}
-
-export default function App() {
+function App() {
   return (
     <NavigationContainer>
-      <MyDrawer />
+      <Drawer.Navigator initialRouteName="TelaA">
+        <Drawer.Screen name="TelaA" component={TelaA} />
+        <Drawer.Screen name="TelaB" component={TelaB} />
+        <Drawer.Screen name="TelaC" component={TelaC} />
+      </Drawer.Navigator>
     </NavigationContainer>
   );
 }
+
+export default App;
