@@ -14,4 +14,5 @@ Menu inferior com nomes e ícones com as opções de telas.
 #### 4 - Material Top Tabs Navigator
 Menu superior com nomes e ícones com as opções de telas. 
 
-## Alunos: Ana Beatriz, Bernardo Machado, Cairé de Marco, Enzo Batista, Jaíza Freire e Maria Eduarda.
+## Alunos:
+Ana Beatriz, Bernardo Machado, Cairé de Marco, Enzo Batista, Jaíza Freire e Maria Eduarda.
