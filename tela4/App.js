@@ -1,23 +1,26 @@
 import * as React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import telaA from './screens/TelaA.js'
-import telaB from './screens/TelaB.js'
-import telaC from './screens/TelaC.js'
+import { NavigationContainer } from '@react-navigation/native'; 
+import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
+import TelaA from './screens/TelaA.js'
+import TelaB from './screens/TelaB.js'
+import TelaC from './screens/TelaC.js'
+const Tab = createMaterialTopTabNavigator();
 
-export default function App() {
+function MyTabs() {
   return (
-   
-
-    <NavigationContainer></NavigationContainer>
+    <Tab.Navigator>
+      <Tab.Screen name="Tela A" component={TelaA} />
+      <Tab.Screen name="Tela B" component={TelaB} />
+      <Tab.Screen name="Tela C" component={TelaC} />
+    </Tab.Navigator>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default function App() {
+  return (
+    <NavigationContainer> 
+      <MyTabs />
+    </NavigationContainer>
+  );
+}
