@@ -10,10 +10,10 @@ const Drawer = createDrawerNavigator();
 function App() {
   return (
     <NavigationContainer>
-      <Drawer.Navigator initialRouteName="TelaA">
-        <Drawer.Screen name="TelaA" component={TelaA} />
-        <Drawer.Screen name="TelaB" component={TelaB} />
-        <Drawer.Screen name="TelaC" component={TelaC} />
+      <Drawer.Navigator initialRouteName="Tela A">
+        <Drawer.Screen name="Tela A" component={TelaA} />
+        <Drawer.Screen name="Tela B" component={TelaB} />
+        <Drawer.Screen name="Tela C" component={TelaC} />
       </Drawer.Navigator>
     </NavigationContainer>
   );
