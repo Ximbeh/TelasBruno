@@ -3,7 +3,7 @@ import { View, Text } from 'react-native';
 
 function TelaB() {
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: '#ffbbc3' }}>
       <Text>Tela B</Text>
     </View>
   );
